@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - Radar da Base</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        body { background-color: #f8f9fa; color: #212529; }
+        header { background-color: #0b1a30; color: #ffffff; padding: 35px 20px; text-align: left; border-bottom: 4px solid #28a745; }
+        header h1 { font-size: 2.2rem; font-weight: 800; }
+        nav { background-color: #112233; padding: 12px; display: flex; gap: 20px; }
+        nav a { color: #ffffff; text-decoration: none; font-size: 0.95rem; font-weight: 600; padding: 5px 10px; border-radius: 4px; }
+        nav a:hover, nav a.active { background-color: #28a745; }
+        .container { max-width: 600px; margin: 40px auto; padding: 30px; background: #ffffff; border: 1px solid #dee2e6; border-radius: 6px; }
+        h2 { color: #0b1a30; margin-bottom: 20px; }
+        .campo { margin-bottom: 18px; }
+        label { display: block; margin-bottom: 6px; font-weight: 600; font-size: 0.9rem; color: #495057; }
+        input, textarea { width: 100%; padding: 10px; border: 1px solid #ced4da; border-radius: 4px; font-size: 0.95rem; }
+        textarea { height: 110px; resize: none; }
+        .botao-enviar { background-color: #28a745; color: white; border: none; padding: 12px; border-radius: 4px; font-weight: 600; cursor: pointer; width: 100%; font-size: 1rem; }
+        .botao-enviar:hover { background-color: #218838; }
+        footer { background-color: #112233; color: #6c757d; text-align: center; padding: 25px; margin-top: 80px; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Radar da Base</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="convocados.html">Lista do Mundial</a>
+        <a href="flamengo.html">Análise: Flamengo</a>
+        <a href="minete.html">Caso Diego Minete</a>
+        <a href="contatos.html" class="active">Fale Conosco</a>
+    </nav>
+
+    <div class="container">
+        <h2>Espaço de Interação</h2>
+        <p style="margin-bottom: 20px; color: #6c757d;">Envie sugestões de pautas ou feedbacks sobre os textos publicados no portal.</p>
+        
+        <form action="#" method="POST" onsubmit="alert('Obrigado pelo envio!'); return false;">
+            <div class="campo">
+                <label for="usr-nome">Nome Completo</label>
+                <input type="text" id="usr-nome" required>
+            </div>
+            <div class="campo">
+                <label for="usr-email">Endereço de E-mail</label>
+                <input type="email" id="usr-email" required>
+            </div>
+            <div class="campo">
+                <label for="usr-msg">Mensagem</label>
+                <textarea id="usr-msg" required></textarea>
+            </div>
+            <button type="submit" class="botao-enviar">Encaminhar Feedback</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Desenvolvido para fins estudantis - Trabalho Acadêmico UVV 2026</p>
+    </footer>
+
+</body>
+</html>

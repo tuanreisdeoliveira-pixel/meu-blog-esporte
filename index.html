@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar da Base - Blog de Futebol Juvenil</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        body { background-color: #f8f9fa; color: #212529; }
+        header { background-color: #0b1a30; color: #ffffff; padding: 35px 20px; text-align: left; border-bottom: 4px solid #28a745; }
+        header h1 { font-size: 2.2rem; font-weight: 800; letter-spacing: -1px; }
+        header p { color: #adb5bd; margin-top: 5px; font-size: 1rem; }
+        nav { background-color: #112233; padding: 12px; display: flex; gap: 20px; }
+        nav a { color: #ffffff; text-decoration: none; font-size: 0.95rem; font-weight: 600; padding: 5px 10px; border-radius: 4px; }
+        nav a:hover, nav a.active { background-color: #28a745; color: #ffffff; }
+        .container { max-width: 1140px; margin: 40px auto; padding: 0 20px; }
+        .painel-boas-vindas { background-color: #ffffff; padding: 30px; border: 1px solid #dee2e6; border-radius: 6px; margin-bottom: 40px; }
+        .painel-boas-vindas h2 { margin-bottom: 12px; color: #0b1a30; }
+        .titulo-secao { font-size: 1.5rem; margin-bottom: 25px; color: #0b1a30; font-weight: 700; text-transform: uppercase; }
+        .lista-artigos { display: flex; flex-direction: column; gap: 25px; }
+        .artigo-item { display: flex; background: #ffffff; border: 1px solid #dee2e6; border-radius: 6px; overflow: hidden; text-decoration: none; color: inherit; }
+        .artigo-item:hover { border-color: #28a745; }
+        .artigo-item img { width: 280px; height: 180px; object-fit: cover; }
+        .artigo-corpo { padding: 20px; display: flex; flex-direction: column; justify-content: center; }
+        .artigo-corpo h3 { color: #0b1a30; font-size: 1.3rem; margin-bottom: 10px; }
+        .artigo-corpo p { color: #495057; font-size: 0.95rem; }
+        footer { background-color: #112233; color: #6c757d; text-align: center; padding: 25px; margin-top: 80px; font-size: 0.85rem; border-top: 1px solid #dee2e6; }
+        @media (max-width: 768px) {
+            .artigo-item { flex-direction: column; }
+            .artigo-item img { width: 100%; height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Radar da Base</h1>
+        <p>Acompanhando de perto o futuro do nosso futebol</p>
+    </header>
+
+    <nav>
+        <a href="index.html" class="active">Início</a>
+        <a href="convocados.html">Lista do Mundial</a>
+        <a href="flamengo.html">Análise: Flamengo</a>
+        <a href="minete.html">Caso Diego Minete</a>
+        <a href="contatos.html">Fale Conosco</a>
+    </nav>
+
+    <div class="container">
+        <section class="painel-boas-vindas">
+            <h2>Espaço de Análise Teórica</h2>
+            <p>Este espaço foi planejado como parte de uma atividade acadêmica para debater as diretrizes, escolhas e realidades do futebol de formação no Brasil. Tomando como gancho a disputa da Copa do Mundo Sub-17 em solo catariano, analisamos os critérios técnicos adotados nas convocações recentes, a influência direta das principais academias de clubes do país e os debates que cercam os nomes que acabam ficando de fora dos planos das comissões técnicas da CBF.</p>
+        </section>
+
+        <h2 class="titulo-secao">Postagens em Destaque</h2>
+
+        <div class="lista-artigos">
+            <a href="convocados.html" class="artigo-item">
+                <img src="https://unsplash.com" alt="Estádio">
+                <div class="artigo-corpo">
+                    <h3>Quem vai ao Catar? A listagem oficial dos 21 nomes</h3>
+                    <p>Veja os atletas selecionados por Dudu Patetuci para buscar o torneio mundial e as mudanças de última hora no meio de campo.</p>
+                </div>
+            </a>
+
+            <a href="flamengo.html" class="artigo-item">
+                <img src="https://unsplash.com" alt="Treinamento de futebol">
+                <div class="artigo-corpo">
+                    <h3>O papel do Ninho do Urubu na preparação final</h3>
+                    <p>Entenda por que o time carioca dominou as atenções na Granja Comary e quais jogadores dão suporte aos treinos táticos.</p>
+                </div>
+            </a>
+
+            <a href="minete.html" class="artigo-item">
+                <img src="https://unsplash.com" alt="Futebol detalhe">
+                <div class="artigo-corpo">
+                    <h3>A polêmica ausência do artilheiro vascaíno</h3>
+                    <p>Discutimos os possíveis fatores táticos que afastaram o atacante Diego Minete da delegação que viajou para o Oriente Médio.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido para fins estudantis - Trabalho Acadêmico UVV 2026</p>
+    </footer>
+
+</body>
+</html>
